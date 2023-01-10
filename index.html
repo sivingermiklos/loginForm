@@ -10,11 +10,10 @@
         <title>Login</title>
     </head>
     <body>
-        <div class="container">
-            <h1 class="text-center p-3 my-3">Bejelentkezés</h1>
+        <div class="container" id="egesz" style="display: block">
             <div class="d-flex justify-content-center">
-                <form class="w-50 d-flex flex-column justify-content-center text-center border rounded p-5">
-                        <h3 class="text-center">Felhasználónév</h3>
+                <form class="w-50 d-flex flex-column justify-content-center text-center border rounded p-5 mt-4">
+                    <h1 class="text-center mb-5">Bejelentkezés</h1>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" id="user">
                         <span class="input-group-text">Felhasználónév</span>
@@ -23,16 +22,24 @@
                         <input type="password" class="form-control" id="pass">
                         <span class="input-group-text">Jelszó</span>
                     </div>
-                    <div class="input-group mb-3">
-                        <div class="form-check text-center">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                              Felhasználói Feltételek
-                            </label>
-                          </div>
+                    <div class="input-group mb-3 justify-content-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="feltetelek">
+                            <label class="form-check-label" for="feltetelek">Felhasználói Feltételek</label>
+                        </div>
                     </div>
                         <button type="button" class="btn btn-primary" onclick="login()">Bejelentkezés</button>
                 </form>
+            </div>
+        </div>
+        <div class="container" id="udv" style="display: none">
+            <div class="d-flex justify-content-center">
+                <h1 class="text-center mb-5">Üdv, Admin</h1>
+            </div>
+        </div>
+        <div class="container" id="nemjo" style="display: none">
+            <div class="d-flex justify-content-center">
+                <h1 class="text-center mb-5 text-danger">nem jo</h1>
             </div>
         </div>
     </body>
